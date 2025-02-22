@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joseph Roah Mga Bayot</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        height: 100vh;
+        background-color: pink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .title {
+        margin-bottom: 30px;
+        color: yellow;
+      }
+      h1 {
+        color: white;
+        text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black,
+          1px 1px 2px black;
+        text-align: center;
+      }
+      button {
+        margin: 15px;
+        padding: 5px;
+      }
+
+      #fireworks {
+        width: 500px;
+        position: fixed;
+        display: none;
+      }
+      p {
+        text-align: center;
+        margin-bottom: 100px;
+        font-weight: bolder;
+        color: white;
+        text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black,
+          1px 1px 2px black;
+      }
+
+      span {
+        color: red;
+      }
+
+      .choices-container {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .gays {
+        width: 600px;
+        position: fixed;
+        opacity: 50%;
+        display: none;
+      }
+
+      @keyframes fadeInOut {
+        0% {
+          opacity: 0;
+        }
+        20% {
+          opacity: 1;
+        } /* Fade in */
+        80% {
+          opacity: 1;
+        } /* Stay visible */
+        100% {
+          opacity: 0;
+        } /* Fade out */
+      }
+
+      @media (max-width: 767px) {
+        h1 {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="gays" src="./fotos/joseph.jpg" alt="joseph" />
+      <img class="gays" src="./fotos/roah.jpg" alt="roah" />
+      <img id="fireworks" src="./fotos/fireworks.png" alt="fireworks" />
+      <div class="quesiton-container">
+        <h1 class="title">ULTIMATE QUIZ</h1>
+        <p id="aura-counter">IMOHANG AURA: <span id="aura-color">0</span></p>
+        <h1>"Bayot si ROAH ug si JOSEPH"</h1>
+      </div>
+      <div class="choices-container">
+        <button id="true">TRUE</button>
+        <button id="false">FALSE</button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
